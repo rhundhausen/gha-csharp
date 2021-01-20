@@ -1,4 +1,4 @@
-name: rh-csharp
+name: kh-csharp
 
 on:
   workflow_dispatch:
