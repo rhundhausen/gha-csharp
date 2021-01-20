@@ -6,7 +6,7 @@ on:
       workingDirectory:
         description: 'Working directory'     
         required: true
-        default: 'warning'
+        default: 'src'
 
 jobs:
   build:
@@ -15,7 +15,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: src
+        working-directory: ${{ github.event.inputs.workingDirectory }}
 
     steps:
     - uses: actions/checkout@v2
