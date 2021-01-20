@@ -1,4 +1,4 @@
-name: rh-csharp
+name: rh-csharp-windows
 
 on:
   workflow_dispatch:
