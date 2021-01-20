@@ -2,6 +2,11 @@ name: rh-csharp-ubuntu
 
 on:
   workflow_dispatch:
+    inputs:
+      workingDirectory:
+        description: 'Working directory'     
+        required: true
+        default: 'warning'
 
 jobs:
   build:
