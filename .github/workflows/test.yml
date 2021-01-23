@@ -10,7 +10,12 @@ jobs:
 
     steps:
       - name: Echo
-        run: echo I am an echo message
+        run: echo Hello World
+      - name: Echo (grouped)
+        run: |
+          echo "::group::My group"
+          echo "Hello World"
+          echo "::endgroup::"
       - name: Debug
         run: echo "::debug ::I am a debug message"
       - name: Warning
