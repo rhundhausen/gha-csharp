@@ -1,1 +1,13 @@
-echo "::set-output name=character::Grogu"
+name: test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  experimenting:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Echo
+        run: echo Hello World
