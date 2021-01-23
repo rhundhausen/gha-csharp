@@ -13,8 +13,10 @@ jobs:
         run: echo Hello World
       - name: Echo (grouped)
         run: |
-          echo "::group::My group"
+          echo "::group::Hello group"
+          echo "Hello GitHub"
           echo "Hello World"
+          echo "Hello Universe"
           echo "::endgroup::"
       - name: Debug
         run: echo "::debug ::I am a debug message"
