@@ -9,5 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Echo
+      - name: Echo1
         run: echo Hello World
+      - name: Echo2
+        run: echo "::set-output name=action_fruit::strawberry"
