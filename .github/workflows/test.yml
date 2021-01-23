@@ -26,5 +26,7 @@ jobs:
         run: echo "::error ::I am an error message"
       - name: Masked
         run: |
-          echo The answer to the ultimate question of life, the universe, and everything is
+          echo "::add-mask::Mona The Octocat"
+          echo "The answer to the ultimate question of life, the universe, and everything is"
           echo "::add-mask::42"
+          echo "42"
