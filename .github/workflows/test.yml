@@ -24,3 +24,5 @@ jobs:
         run: echo "::warning ::I am a warning message"
       - name: Error
         run: echo "::error ::I am an error message"
+      - name: Masked
+        run: echo "The answer to the ultimate question of life, the universe, and everything is::add-mask::42"
