@@ -9,7 +9,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Echo1
-        run: echo Hello World
-      - name: Echo2
-        run: echo "::set-output name=action_fruit::strawberry"
+      - name: Echo
+        run: echo I am an echo message
+      - name: Debug
+        run: echo "::debug ::I am a debug message"
+      - name: Warning
+        run: echo "::warning ::I am a warning message"
+      - name: Error
+        run: echo "::error ::I am an error message"
